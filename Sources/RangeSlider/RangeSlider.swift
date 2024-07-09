@@ -44,7 +44,7 @@ import SwiftUI
 /// ```
 ///
 /// The result(default UI settings):
-/// ![default view](https://scontent.xx.fbcdn.net/v/t1.15752-9/441958644_1472947066676216_7198676382296705988_n.png?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=5vAxYN2b-uEQ7kNvgGARdO3&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHQMw3N6As4Ni_8I0aVjIQWTpW9RHotWPf8CP_HCDvGbw&oe=668BF3EB)
+/// ![default view](https://github.com/haner0834/RangeSlider/blob/main/Images/Screenshot/default.png?raw=true)
 ///
 /// You can also use two separate values in one `RangeSlider`.
 /// Modifiers are also supported:
@@ -61,7 +61,7 @@ import SwiftUI
 ///         .thumbShadownHidden()
 /// }
 /// ```
-/// ![strokeline-green-noshadown](https://scontent.xx.fbcdn.net/v/t1.15752-9/447577216_517137327306888_6816800665435399951_n.png?_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=cL2SInprrCsQ7kNvgFa5-jC&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QFlMLmQcU4ca1JZab6gfn-X3QaFmQNYiEo9LOjlb1hOdg&oe=66A4AAA7)
+/// ![strokeline-green-noshadown](https://github.com/haner0834/RangeSlider/blob/main/Images/Screenshot/green-no_shadown-strokeline.png?raw=true)
 ///
 /// - Note: Although there is value-safety checking when initializing the view,
 /// having `upperBound` less than `lowerBound` can be performed but is not supported.
@@ -87,13 +87,13 @@ import SwiftUI
 /// }
 /// ```
 ///
-/// ![withoverlay](https://scontent.xx.fbcdn.net/v/t1.15752-9/449073048_1001338121581026_1576437319079074797_n.png?_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=ErWwbsuZs8cQ7kNvgFFbAw5&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHcRZSG0y0dqidwEIvixjNOJ_mO2REdFuHn9jiO3JvTiQ&oe=66B227D4)
+/// ![withoverlay](https://github.com/haner0834/RangeSlider/blob/main/Images/Screenshot/withoverlay.png?raw=true)
 ///
 /// As you can see, you can customize two different views for left and right thumb through given parameter `direction`,
 /// to learn more, please go ``init(selection:in:step:thumbOverlay:)`` or ``init(lowerBound:upperBound:in:step:thumbOverlay:)``.
 ///
 /// While track height larger tahn thumb scale, the slider will be like the image below:
-/// ![track-larger-thumb-blue](https://scontent.xx.fbcdn.net/v/t1.15752-9/436239176_967048534862127_6889174754414503721_n.png?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=TI4fS512vXYQ7kNvgEfGw5x&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QH-EsWo9rCnNSyZF9r5PnkHIXX11bxguGAJMQvI7_XeaA&oe=668BED5C)
+/// ![track-larger-thumb-blue](https://github.com/haner0834/RangeSlider/blob/main/Images/Screenshot/track-larger.png?raw=true)
 ///
 public struct RangeSlider<ThumbOverlay: View>: View {
     //MARK: parameters
