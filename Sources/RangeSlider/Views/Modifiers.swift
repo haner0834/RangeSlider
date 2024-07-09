@@ -25,7 +25,7 @@ public extension RangeSlider {
     /// }
     /// ```
     ///
-    /// ![red track style](https://scontent.xx.fbcdn.net/v/t1.15752-9/435982137_2409047722819298_1114680940329393819_n.png?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=1GuTK1p415oQ7kNvgGfsdlt&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QE_IHZZ-aOytOUqdrs3xxmx0y5F-ilg15S9sLH2NuBeBA&oe=667561C3)
+    /// ![red track style](https://github.com/haner0834/RangeSlider/blob/main/Images/Screenshot/red.png?raw=true)
     func tint(_ color: Color) -> RangeSlider {
         var slider = self
         slider.track.middle = color
@@ -48,7 +48,7 @@ public extension RangeSlider {
     ///     .tint(left: .red, middle: .accentColor.opacity(0.5), right: .green)
     /// ```
     ///
-    /// ![red-blue-green track style](https://scontent.xx.fbcdn.net/v/t1.15752-9/442452331_434898645925633_4196377186975355785_n.png?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=LNU4WklCKYcQ7kNvgEncf_-&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QG8e0HS_mnlmzNmBS094rnczDa2yQfHPFtauBYQ37U5QQ&oe=667585A3)
+    /// ![red-blue-green track style](https://github.com/haner0834/RangeSlider/blob/main/Images/Screenshot/red-blue-green.png?raw=true)
     ///
     /// - Note: `left` and `right` are part of track, so it is above `background`.
     /// The color of `left` and `right` will cover `background` color if it's not `nil`.
@@ -88,7 +88,7 @@ public extension RangeSlider {
     /// ```
     ///
     /// And this is how it looks:
-    /// ![stroke style, yellow thumb](https://scontent.xx.fbcdn.net/v/t1.15752-9/436036254_784010113707902_5333199457981729187_n.png?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=xSsnnVJIYoQQ7kNvgEvSmaq&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QFRnEd0AT7J6SZOvUhA5lkJlzUztW_p9amCUkWuJOVHfQ&oe=66756458)
+    /// ![stroke style, yellow thumb](https://github.com/haner0834/RangeSlider/blob/main/Images/Screenshot/strokeline-green-yellow.png?raw=true)
     ///
     /// - Note: If thumb scale is less than track, the thumb color is determines by `color`, instead of `frontThumbColor`.
     func thumb(scale: CGFloat? = nil, color: Color? = nil, frontThumbColor: Color? = nil, isShowShadown: Bool? = nil) -> RangeSlider {
@@ -119,7 +119,7 @@ public extension RangeSlider {
     ///     .trackBackgroundHidden()
     /// ```
     /// The result:
-    /// ![no background](https://scontent.xx.fbcdn.net/v/t1.15752-9/436798329_1150552495987954_8023668590354948302_n.png?_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_ohc=TCaw8_8AFVEQ7kNvgHnSGQh&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QEWxfr8FqRLztF2W9d0Nf6OJ0H1mFiqJ8e_dh2wD9UE5w&oe=66B451CD)
+    /// ![no background](https://github.com/haner0834/RangeSlider/blob/main/Images/Screenshot/no-background.png?raw=true)
     func trackBackgroundHidden(_ visibility: ViewVisibility = .hidden) -> RangeSlider {
         var slider = self
         slider.track.isShowBackground = visibility.isVisible
@@ -218,7 +218,7 @@ public extension RangeSlider {
     ///
     /// While the `height` larger than it's thumb scale, the view will be like:
     ///
-    /// ![track height larger than thumb scale](https://scontent.xx.fbcdn.net/v/t1.15752-9/436239176_967048534862127_6889174754414503721_n.png?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=UWkE1lS4ZsAQ7kNvgGuOb5r&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QGAz9glx0ZK6CB4m_zwm4LpDSNBbUy-DBmqLUgUJ0yCFA&oe=667583DC)
+    /// ![track height larger than thumb scale](https://github.com/haner0834/RangeSlider/blob/main/Images/Screenshot/track-larger.png?raw=true)
     ///
     /// If you want to know how to customize it's style, go to ``thumb(scale:color:frontThumbColor:isShowShadown:)`` or ``tint(left:middle:right:background:)``.
     func track(_ color: Color? = nil, background: Color? = nil, height: CGFloat? = nil) -> RangeSlider {
@@ -264,7 +264,7 @@ public extension RangeSlider {
     /// ```
     ///
     /// The resule:
-    /// ![green-stroke line](https://scontent.xx.fbcdn.net/v/t1.15752-9/447510701_1383167599036165_3153862695738248711_n.png?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=erHkoHDhh7kQ7kNvgGh6D23&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QGnNal1s6AII0vubzt0aaRcw4c8suNfZjUnRyST0ye_0Q&oe=668CB13F)
+    /// ![green-stroke line](https://github.com/haner0834/RangeSlider/blob/main/Images/Screenshot/green-strokeline.png?raw=true)
     func thumbStyle(_ style: ThumbStyle, color: Color? = .blue, lineWidth: CGFloat? = nil) -> RangeSlider {
         var slider = self
         slider.thumb.style = style
