@@ -109,7 +109,7 @@ public extension RangeSlider {
     /// ```
     ///
     /// Result:
-    /// ![withoverlay](https://scontent.xx.fbcdn.net/v/t1.15752-9/449073048_1001338121581026_1576437319079074797_n.png?_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=ErWwbsuZs8cQ7kNvgFFbAw5&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHcRZSG0y0dqidwEIvixjNOJ_mO2REdFuHn9jiO3JvTiQ&oe=66B227D4)
+    /// ![withoverlay](https://github.com/haner0834/RangeSlider/blob/main/Images/Screenshot/withoverlay.png?raw=true)
     init(selection: Binding<ClosedRange<Double>>,
          in range: ClosedRange<CGFloat> = 0...100,
          step: CGFloat? = nil,
@@ -150,7 +150,7 @@ public extension RangeSlider {
     /// ```
     ///
     /// Result:
-    /// ![withoverlay](https://scontent.xx.fbcdn.net/v/t1.15752-9/449073048_1001338121581026_1576437319079074797_n.png?_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=ErWwbsuZs8cQ7kNvgFFbAw5&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHcRZSG0y0dqidwEIvixjNOJ_mO2REdFuHn9jiO3JvTiQ&oe=66B227D4)
+    /// ![withoverlay](https://github.com/haner0834/RangeSlider/blob/main/Images/Screenshot/withoverlay.png?raw=true)
     init(lowerBound: Binding<Double>,
          upperBound: Binding<Double>,
          in range: ClosedRange<CGFloat> = 0...100,
