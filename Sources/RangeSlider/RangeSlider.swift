@@ -373,7 +373,7 @@ fileprivate struct ContentView: View {
         VStack {
             Slider(value: $lowerBound, in: 0...100)
             
-            RangeSlider(upperBound: $upperBound, lowerBound: $lowerBound)
+            RangeSlider(lowerBound: $lowerBound, upperBound: $upperBound)
             
             RangeSlider(selection: $selection)
                 .thumbStyle(.strokeLine, color: .green)

@@ -45,8 +45,8 @@ public extension RangeSlider where ThumbOverlay == EmptyView {
     /// While using this initializer, please check the `upperBound` value, do not let it less than `loweerBound`.
     /// Though there's value-safety checking to pervent `lowerBound` larger than `upperBound`,
     /// having `upperBound` less than `lowerBound` can be performed but not suppored.
-    init(upperBound: Binding<Double>,
-         lowerBound: Binding<Double>,
+    init(lowerBound: Binding<Double>,
+         upperBound: Binding<Double>,
          in range: ClosedRange<CGFloat> = 0...100,
          step: CGFloat? = nil) {
         ///Turning two `Double` value to one `ClosedRange<Double>`
