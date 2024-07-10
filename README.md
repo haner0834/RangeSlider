@@ -1,18 +1,20 @@
 # RangeSlider
 
+Language: [Englesh](README.md) | [中文](README_zh.md)
+
 RangeSlider is a customizable Swift package that provides a simple and intuitive way to work with range sliders in iOS and macOS applications.
 It supports binding to a `ClosedRange<Double>` and can also be initialized with two `Double` values. 
 The package is compatible with iOS 14 and later, as well as macOS 11 and later.
 
 - [Features](#features)
 - [Requirenents](#requirements)
-- [Swift Package Manager](#swift-packager-manager)
+- [Swift Package Manager](#swift-package-manager)
 - [Usage](#usage)
   - [Basic Usage](#basic-usage)
   - [Bind Two Values](#bind-two-values)
-- [Customizing UI](#customizing-ui)
+- [Customizing UI](#customizing-the-ui)
   - [Simple API](#simple-api)
-  - [Advences](#advences)
+  - [Advences](#advances)
   - [Add Overlay to Thumb](#add-overlay-to-thumb)
 - [Screenshot](#screenshots)
 - [Installation](#installation)
@@ -69,8 +71,6 @@ struct ContentView: View {
 You can customize the appearance of the `RangeSlider` by using the available modifiers:
 
 ```swift
-import RangeSlider
-
 struct ContentView: View {
     @State private var selection: ClosedRange<Double> = 0.0...100.0
     
@@ -83,19 +83,19 @@ struct ContentView: View {
 ```
 
 ### Advances
-For more advanced customization, you can use the following example:
+For more advanced customization, you can use it as the following example:
 ```swift
 struct ContentView: View {
     @State private var selection: ClosedRange<Double> = 20.0...80.0
 
     var body: some View {
         RangeSlider(selection: $selection, in: 0...100)
-        .thumb(scale: 30)
-        .thumbStyle(.strokeLine)
-        .thumb(color: .white)
-        .trackBackgroundHidden()
-        .thumbShadownHidden()
-        .track(height: 40)
+            .thumb(scale: 30)
+            .thumbStyle(.strokeLine)
+            .thumb(color: .white)
+            .trackBackgroundHidden()
+            .thumbShadownHidden()
+            .track(height: 40)
     }
 }
 ```
@@ -119,7 +119,7 @@ RangeSlider(selection: $selection) { direction in
 
 For more API information, please check [RangeSlider.swift](Sources/RangeSlider/RangeSlider.swift),
 [Inits.swift](Sources/RangeSlider/Inits.swift), and [Modifiers.swift](Sources/RangeSlider/Views/Modifiers.swift).  
-If your using Xcode, right click the target API or structure, then click `Show Quick Help` to read the documentation.
+If you're using Xcode, right click the target API or structure, then click `Show Quick Help` to read the documentation.
 
 ## Screenshots
 
@@ -134,7 +134,7 @@ If your using Xcode, right click the target API or structure, then click `Show Q
 
 ### Swift Package Manager
 
-1. Select `Xcode` -> `File` -> `Swiftr Package` -> `Add Dependency...`.
+1. Select `Xcode` -> `File` -> `Swift Packages` -> `Add Dependency...`.
 2. Enter `https://github.com/haner0834/RangeSlider`.
 3. Click `Next`, then select the version, complete.
 
