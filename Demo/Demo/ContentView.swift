@@ -21,7 +21,7 @@ struct ContentView: View {
             //MARK: - Bind two values
             /// You can bind two `Double` value to a `RangeSlider` initializer as easy as this:
             Title("Bind two values")
-            RangeSlider(upperBound: $upperBound, lowerBound: $lowerBound)
+            RangeSlider(lowerBound: $lowerBound, upperBound: $upperBound)
             
             //MARK: - Default UI settings
             Title("Default")

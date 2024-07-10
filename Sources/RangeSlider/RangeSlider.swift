@@ -68,7 +68,7 @@ import SwiftUI
 /// Because if `upperBound` less than `lowerBound`, 
 /// `upperBound` won't update new safe value until user drag the thumb.
 ///
-/// If you want to know more about it, please go to ``init(upperBound:lowerBound:step:in:)``
+/// If you want to know more about it, please go to ``init(lowerBound:upperBound:step:in:)``
 ///
 /// Add overlay to thumb is also support:
 /// ```swift
